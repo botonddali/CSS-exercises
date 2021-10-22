@@ -8,59 +8,74 @@
     <style>
       * {
         font-size: 12px;
+        margin: 0;
+        margin: 0;
+      }
+
+      section {
+        padding: 50px;
       }
 
       h2 {
         font-size: 1.6em;
         text-align: center;
-        width: 500px;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 20px 0 20px 0;
       }
       table {
         font-family: Arial, sans-serif;
         border-collapse: collapse;
-        width: 500px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 25px auto;
+        min-width: 500px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
       }
-
-      td {
-        border: 1px solid black;
-      }
-      tr:nth-child(even) {
-        background-color: #efffd2;
-      }
-
-      tr:nth-child(odd) {
-        background-color: #d4fa97;
-      }
-
-      th {
-        text-align: center;
-        font-weight: bolder;
-        background-color: #80b327;
+      section table thead th {
+        background-color: #009879;
         color: white;
-        border: 1px solid black;
+        font-weight: bold;
+        padding: 10px;
+      }
+
+      section table tbody th,
+      section table tbody td {
+        padding: 10px 12px;
+      }
+
+      section table tbody tr {
+        border-bottom: 1px solid #dddddd;
+      }
+
+      section table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+
+      section table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
       }
     </style>
   </head>
   <body>
-    <section class="">
+    <section>
       <h2>Student Mark Sheet</h2>
       <table>
-        <th colspan="6">Students Mark Sheet</th>
+        <thead>
+          <tr>
+            <th colspan="6">Students Mark Sheet</th>
+          </tr>
+        </thead>
+
         <tbody>
           <tr>
-            <td>Name</td>
-            <td>Maths</td>
-            <td>Science</td>
-            <td>English</td>
-            <td>Physics</td>
-            <td>General Knowledge</td>
+            <th>Name</th>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>English</th>
+            <th>Physics</th>
+            <th>General Knowledge</th>
           </tr>
           <tr>
-            <td>David</td>
+            <th>David</th>
             <td>85</td>
             <td>87</td>
             <td>88</td>
@@ -68,7 +83,7 @@
             <td>88</td>
           </tr>
           <tr>
-            <td>Richard</td>
+            <th>Richard</th>
             <td>91</td>
             <td>81</td>
             <td>78</td>
@@ -76,7 +91,7 @@
             <td>74</td>
           </tr>
           <tr>
-            <td>John</td>
+            <th>John</th>
             <td>81</td>
             <td>86</td>
             <td>88</td>
@@ -84,7 +99,7 @@
             <td>92</td>
           </tr>
           <tr>
-            <td>Tony</td>
+            <th>Tony</th>
             <td>84</td>
             <td>86</td>
             <td>87</td>
@@ -92,7 +107,7 @@
             <td>81</td>
           </tr>
           <tr>
-            <td>Scott</td>
+            <th>Scott</th>
             <td>71</td>
             <td>79</td>
             <td>82</td>
