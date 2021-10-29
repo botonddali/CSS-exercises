@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: Montserrat, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,45 +12,9 @@ body {
     rgb(97, 171, 201) 50%,
     rgb(15, 144, 196)
   );
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-
-form {
-  max-width: 800px;
-  background-color: rgba(129, 246, 252, 0.356);
-  padding: 30px;
-}
-
-.input-group {
-  margin: 15px 0;
-}
-
-#email {
-  width: 100%;
-  height: 30px;
-}
-
-#message {
-  width: 100%;
-}
-
-#fname,
-#lname {
-  width: 50%;
-  height: 30px;
 }
 
 label {
-  margin: 0 30px 0 0;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px;
-}
-
-.row

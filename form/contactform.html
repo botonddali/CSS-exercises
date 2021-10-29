@@ -1,74 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <section>
-      <h2>Contact Form</h2>
-      <p>Please fill in your question and we'll be back to you soon</p>
-    </section>
-    <section>
-      <div class="row">
-        <div class="column">
-          <label for="fname">Your Name</label>
-          <label for="email">Your Email</label>
-          <label for="tel">Phone *</label>
-          <label for="subject">Message Subject *</label>
-          <label for="message">Message *</label>
-          <label for="verification">Verification *</label>
-        </div>
-  
-        <div class="column">
-          <form action="#">
-            <div class="input-group">  
-              <input type="text" id="fname" name="fname" placeholder="First name" />
-              <input type="text" id="lname" name="lname" placeholder="Last name" />
-              <br />
-              
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <header>
+    <h2>Contact Form</h2>
+    <p>Please fill in your question and we'll be back to you soon</p>
+  </header>
+  <section class="section-container">
+    <div class="column">
+      <!-- Form starts here -->
+      <form action="#">
+        <!-- Name -->
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Your Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="fname" placeholder="First name" />
+            <input type="text" id="lname" name="lname" placeholder="Last name" />
+            <br />
+          </div>
+          <!-- Email -->
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Your Email</label>
             </div>
-            <div class="input-group">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="eg. hello@test.com"
-              />
-              <br />
+            <div class="col-75">
+              <input type="email" id="email" name="email" placeholder="eg. hello@test.com" />
             </div>
-            <div class="input-group">
-              
+          </div>
+          <!-- Phone -->
+          <div class="row">
+            <div class="col-25">
+              <label for="tel">Phone *</label>
             </div>
-            <div class="input-group">
-                  <input type="tel" id="tel" name="tel" placeholder="+40" required/><br />
-              
+            <div class="col-75">
+              <input type="tel" id="tel" name="tel" placeholder="##" required />
+              <input type="tel" id="tel" name="tel" placeholder="###" required />
+              <input type="tel" id="tel" name="tel" placeholder="####" required />
             </div>
-            <div class="input-group">
-              <select name="subject" id="subject" required>
-                <option value="Question">Question</option>
-                <option value="Claim">Claim</option>
-                <option value="Other">Other</option>
-              </select>
-              <br />
-              
+            <!-- Message Subject -->
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Message Subject *</label>
+              </div>
+              <div class="col-75">
+                <select name="subject" id="subject" required>
+                  <option value="Question">Question</option>
+                  <option value="Claim">Claim</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
             </div>
-            <div class="input-group">
-                        <textarea type="text" id="message" name="message" rows="8" required></textarea>
-              <br />
+            <!-- Message  -->
+            <div class="row">
+              <div class="col-25">
+                <label for="message">Message *</label>
+              </div>
+              <div class="col-75">
+                <textarea type="text" id="message" name="message" rows="8" required></textarea>
+              </div>
             </div>
-            
-            <div class="input-group">
-                        <input type="checkbox"> I'm not a robot </input>
+            <!-- Verification -->
+            <div class="row">
+              <div class="col-25">
+                <label for="verification">Verification *</label>
+              </div>
+              <div class="col-75">
+                <input type="checkbox"> I'm not a robot </input>
+              </div>
             </div>
+
             <hr>
-            <button class="button">Submit Form</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </body>
+            <!-- Button -->
+            <div class="row">
+              <input class="button" type="submit" value="Submit">
+            </div>
+      </form>
+    </div>
+  </section>
+</body>
+
 </html>
