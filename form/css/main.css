@@ -5,12 +5,13 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), #4c86a8),
-    url(../images/stephen-leonardi-JZCJotPa96c-unsplash.jpg);
-  background-position: center;
-  background-size: cover;
+  background-color: blue;
+  background-image: linear-gradient(
+    to left,
+    rgb(97, 171, 201) 50%,
+    rgb(15, 144, 196)
+  );
   height: 100vh;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
