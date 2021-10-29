@@ -7,12 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="./css/main.css" />
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
   <header>
     <h2>Contact Form</h2>
-    <p>Please fill in your question and we'll be back to you soon</p>
+    <p>Please fill in your question and we'll be sending your order on no time.</p>
   </header>
   <section class="section-container">
     <!-- Form starts here -->
@@ -27,62 +28,63 @@
           <input type="text" id="lname" name="lname" placeholder="Last name" />
           <br />
         </div>
-        <!-- Email -->
-        <div class="row">
-          <div class="col-25">
-            <label for="email">Your Email</label>
-          </div>
-          <div class="col-75">
-            <input type="email" id="email" name="email" placeholder="eg. hello@test.com" />
+      </div>
+      <!-- Email -->
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Your Email</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="email" placeholder="eg. hello@test.com" />
+        </div>
+      </div>
+      <!-- Phone -->
+      <div class="row">
+        <div class="col-25">
+          <label for="tel">Phone *</label>
+        </div>
+        <div class="col-75">
+          <input type="tel" id="tel" name="tel" placeholder="##" required />
+          <input type="tel" id="tel" name="tel" placeholder="###" required />
+          <input type="tel" id="tel" name="tel" placeholder="####" required />
+        </div>
+      </div>
+      <!-- Message Subject -->
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Message Subject *</label>
+        </div>
+        <div class="col-75">
+          <select name="subject" id="subject" required>
+            <option value="Question">Question</option>
+            <option value="Claim">Claim</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <!-- Message  -->
+      <div class="row">
+        <div class="col-25">
+          <label for="message">Message *</label>
+        </div>
+        <div class="col-75">
+          <textarea type="text" id="message" name="message" rows="8" required></textarea>
+        </div>
+      </div>
+      <!-- Verification -->
+      <div class="row">
+        <div class="col-25">
+          <label for="verification">Verification *</label>
+        </div>
+        <div class="col-75">
+          <div class="g-recaptcha brochure__form__captcha" data-sitekey="6Lckm_8cAAAAAKRu7tAmjZo7E2onLxLslU67lPKS">
           </div>
         </div>
-        <!-- Phone -->
-        <div class="row">
-          <div class="col-25">
-            <label for="tel">Phone *</label>
-          </div>
-          <div class="col-75">
-            <input type="tel" id="tel" name="tel" placeholder="##" required />
-            <input type="tel" id="tel" name="tel" placeholder="###" required />
-            <input type="tel" id="tel" name="tel" placeholder="####" required />
-          </div>
-          <!-- Message Subject -->
-          <div class="row">
-            <div class="col-25">
-              <label for="subject">Message Subject *</label>
-            </div>
-            <div class="col-75">
-              <select name="subject" id="subject" required>
-                <option value="Question">Question</option>
-                <option value="Claim">Claim</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-          </div>
-          <!-- Message  -->
-          <div class="row">
-            <div class="col-25">
-              <label for="message">Message *</label>
-            </div>
-            <div class="col-75">
-              <textarea type="text" id="message" name="message" rows="8" required></textarea>
-            </div>
-          </div>
-          <!-- Verification -->
-          <div class="row">
-            <div class="col-25">
-              <label for="verification">Verification *</label>
-            </div>
-            <div class="col-75">
-              <input type="checkbox"> I'm not a robot </input>
-            </div>
-          </div>
+      </div>
 
-          <hr>
-          <!-- Button -->
-          <div class="row">
-            <input class="button" type="submit" value="Submit">
-          </div>
+      <hr>
+      <!-- Button -->
+      <input type="submit" value="SUBMIT FORM">
     </form>
   </section>
 </body>

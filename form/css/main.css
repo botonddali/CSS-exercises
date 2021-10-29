@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   font-family: Montserrat, Arial, sans-serif;
-  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  justify-content: center;
 }
 
 body {
@@ -10,4 +14,118 @@ body {
   background-image: linear-gradient(to left,
       rgb(97, 171, 201) 50%,
       rgb(15, 144, 196));
+}
+
+h2 {
+  color: white;
+  font-size: 40px;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+p {
+  color: white;
+  padding: 0 0 30px;
+}
+
+label {
+  color: white;
+}
+
+.col-25 {
+  float: left;
+  width: 30%;
+  padding: 20px 0;
+}
+
+.col-75 {
+  float: right;
+  width: 70%;
+  padding: 10px 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=text] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: rgb(228, 228, 228);
+}
+
+input[type=tel] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: rgb(228, 228, 228);
+}
+
+select {
+  width: 65%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: black
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.col-75 #fname #lname {
+  display: inline;
+  width: 50px;
+
+}
+
+
+
+hr {
+  margin: 20px 0;
+}
+
+input[type=submit] {
+  margin: 20px 0;
+  padding: 10px 30px;
+  color: white;
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+}
+
+input[type=submit]:hover {
+  margin-top: 20px;
+  padding: 10px 30px;
+  color: rgb(0, 61, 102);
+  background-color: white;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
