@@ -14,18 +14,17 @@ body {
   background-image: linear-gradient(to left,
       rgb(97, 171, 201) 50%,
       rgb(15, 144, 196));
+  padding: 50px 0;
 }
 
 h2 {
   color: white;
   font-size: 40px;
-  padding: 30px 0;
-  margin-top: 50px;
 }
 
 p {
   color: white;
-  padding: 0 0 30px;
+  margin: 20px 0 80px 0;
 }
 
 label {
@@ -52,6 +51,7 @@ label {
 }
 
 input[type=text] {
+  margin: 0 20px 0 0;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -66,10 +66,12 @@ input[type=email] {
 }
 
 input[type=tel] {
+  margin: 0 20px 0 0;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
   color: rgb(228, 228, 228);
+  width: 20%;
 }
 
 select {
@@ -100,7 +102,6 @@ hr {
 }
 
 input[type=submit] {
-  margin: 20px 0;
   padding: 10px 30px;
   color: white;
   background: none;
@@ -109,7 +110,6 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  margin-top: 20px;
   padding: 10px 30px;
   color: rgb(0, 61, 102);
   background-color: white;
