@@ -14,7 +14,7 @@ body {
   background-image: linear-gradient(to left,
       rgb(97, 171, 201) 50%,
       rgb(15, 144, 196));
-  padding: 50px 0;
+  padding: 50px;
 }
 
 h2 {
@@ -31,6 +31,7 @@ label {
   color: white;
 }
 
+
 .col-25 {
   float: left;
   width: 30%;
@@ -41,20 +42,18 @@ label {
   float: right;
   width: 70%;
   padding: 10px 0;
+  display: flex;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.row {
+  display: flex;
 }
 
 input[type=text] {
-  margin: 0 20px 0 0;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  width: 50%;
 }
 
 input[type=email] {
@@ -66,12 +65,12 @@ input[type=email] {
 }
 
 input[type=tel] {
-  margin: 0 20px 0 0;
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
   color: rgb(228, 228, 228);
-  width: 20%;
+
 }
 
 select {
@@ -89,10 +88,10 @@ textarea {
   border-radius: 3px;
 }
 
-.col-75 #fname #lname {
-  display: inline;
-  width: 50px;
-
+#lname,
+#tel2,
+#tel3 {
+  margin: 0 0 0 20px;
 }
 
 
