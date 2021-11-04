@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     font-family: Roboto, sans-serif;
     text-decoration: none;
 }
@@ -19,8 +20,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 160px;
+    width: 1200px;
+    max-width: 80%;
+    margin: auto;
 }
 
 nav a {
@@ -43,15 +45,19 @@ nav a {
     background-image: url(./images/turnatorie-aluminiu.jpg);
     background-color: rgba(0, 0, 0, 0.6);
     background-size: cover;
+    background-position: center;
     position: relative;
 }
 
-.color-overlay {
+.herosection::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     background: #000;
     opacity: 0.6;
-    position: absolute;
 }
 
 h1 {
@@ -62,4 +68,241 @@ h1 {
     text-align: center;
     z-index: 1;
 
+}
+
+h1 .fa {
+    margin-top: 30px;
+    color: white;
+    z-index: 0.5;
+    opacity: 0.8;
+    font-size: 25px;
+}
+
+/* Cine Suntem */
+
+.cinesuntem {
+    background-color: #f6f6f6;
+    padding: 60px;
+
+}
+
+.cinesuntem .row {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.column-1 {
+    width: 390px;
+    padding-right: 80px;
+}
+
+.column-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 470px;
+}
+
+h2 {
+    color: #7c7c7c;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.cinesuntem p {
+    font-size: 15px;
+    line-height: 27px;
+    color: #7C7C7C;
+    margin: 0 0 10px 0;
+}
+
+hr.solid {
+    width: 15%;
+    border: 1px solid #ff5611;
+    margin: 30px auto;
+}
+
+.column-1 {
+    padding: 0 50px 0 0;
+}
+
+.column-2 img {
+    max-width: 136px;
+    max-height: 136px;
+    padding: 10px;
+}
+
+/* Referinte */
+.referinte {
+    background-color: #929292;
+    padding: 100px 0 110px 0;
+}
+
+.referinte img {
+    width: 470px;
+    height: 470px;
+}
+
+.referinte-container {
+    width: 940px;
+    margin: auto;
+}
+
+.card-referinte {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+
+}
+
+.text-referinte {
+    background-color: #f6f6f6;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 56px;
+}
+
+.text-referinte p {
+    font-size: 15px;
+    line-height: 27px;
+    color: #7c7c7c;
+    text-align: center;
+}
+
+.card-referinte h2 {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #7C7C7C;
+
+}
+
+.card-referinte ul li {
+    font-size: 15px;
+    line-height: 27px;
+    color: #7C7C7C;
+    display: list-item;
+    word-wrap: break-word;
+}
+
+.card-referinte ul {
+    padding: 0 0 0 20px;
+}
+
+#videoiframe {
+    position: relative;
+    width: 470px;
+    height: 470px;
+}
+
+/* Comenzi Speciale */
+
+.comenzi-speciale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/turnatorie-aluminiu.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    padding: 100px 0;
+    position: relative;
+}
+
+.comenzi-speciale::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+}
+
+
+.comenzi-column {
+    width: 920px;
+    max-width: 90%;
+    padding: 10px;
+    z-index: 2;
+}
+
+.comenzi-column img {
+    width: 920px;
+    height: 517px;
+}
+
+.comenzi-column p {
+    font-size: 17px;
+    line-height: 30.6px;
+    color: #E5E5E5;
+    text-align: center;
+    padding: 20px 0;
+    width: 625px;
+    margin: auto;
+}
+
+#pentrucomenzi {
+    font-size: 17px;
+    line-height: 30.6px;
+    color: #E5E5E5;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin: auto;
+}
+
+.comenzi-speciale h2 {
+    color: #fff;
+    font-size: 39px;
+    line-height: 45px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Contact Section */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.contact h2 {
+    font-size: 39px;
+    font-weight: 600;
+    color: #7c7c7c;
+    text-align: center;
+}
+
+.city {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #7c7c7c;
+    padding: 10px 0;
+}
+
+.contactlist li {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: left;
+    color: #54595F;
+    padding: 0 0 0 5px;
+}
+
+.contact-columns {}
+
+#mapiframe {
+    width: 450px;
+    height: 317px;
 }
