@@ -4,6 +4,7 @@
     border: 0;
     font-family: Roboto, sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,7 +26,7 @@ nav {
     margin: auto;
 }
 
-nav a {
+.navitems {
     cursor: pointer;
     margin-right: 20px;
     color: black;
@@ -33,13 +34,36 @@ nav a {
     font-size: 13px;
 }
 
-nav a:hover {}
+.navitems:after {
+    transition: all ease-in-out .2s;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    border-bottom: 3px solid rgb(255, 0, 0);
+}
+
+.navitems:hover:after {
+    width: 100%;
+}
+
+.navigationmenu {
+    display: flex;
+    align-items: center;
+
+}
+
 
 .logo {
     max-height: 200px;
     max-width: 200px;
 }
 
+select {
+    background-color: #f6f6f6;
+}
+
+/* Hero Section */
 .herosection {
     display: flex;
     justify-content: center;
@@ -52,6 +76,7 @@ nav a:hover {}
     position: relative;
 }
 
+
 .herosection::after {
     content: "";
     position: absolute;
@@ -62,6 +87,7 @@ nav a:hover {}
     background: #000;
     opacity: 0.6;
 }
+
 
 h1 {
     color: white;
@@ -154,6 +180,7 @@ hr.solid {
 .card-referinte {
     display: flex;
     justify-content: center;
+    overflow: hidden;
     margin-top: -10px;
 
 }
@@ -199,6 +226,51 @@ hr.solid {
     position: relative;
     width: 470px;
     height: 470px;
+}
+
+/* .referinte-slider {
+    overflow: hidden;
+}
+
+.referinte-slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+.referinte-slider figure img {
+    float: left;
+    width: 20%;
+} */
+
+@keyframes .referinte-slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+}
+
+@keyframes .referinte-slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
 }
 
 /* Comenzi Speciale */
