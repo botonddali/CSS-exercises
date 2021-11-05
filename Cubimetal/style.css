@@ -30,7 +30,10 @@ nav a {
     margin-right: 20px;
     color: black;
     font-weight: bold;
+    font-size: 13px;
 }
+
+nav a:hover {}
 
 .logo {
     max-height: 200px;
@@ -274,7 +277,7 @@ hr.solid {
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: 100px 0;
+
 }
 
 .contact h2 {
@@ -289,7 +292,11 @@ hr.solid {
     font-weight: 600;
     line-height: 19px;
     color: #7c7c7c;
-    padding: 10px 0;
+    padding: 20px 0;
+}
+
+.contactlist {
+    list-style: none;
 }
 
 .contactlist li {
@@ -300,9 +307,32 @@ hr.solid {
     padding: 0 0 0 5px;
 }
 
-.contact-columns {}
+.contactlist i {
+    padding-right: 10px;
+    color: #ff5611;
+}
+
+.contact-columns {
+    padding: 50px;
+}
 
 #mapiframe {
     width: 450px;
     height: 317px;
+    margin-top: 50px;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: #929292;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
 }
